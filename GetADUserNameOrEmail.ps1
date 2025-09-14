@@ -2,7 +2,7 @@
     # Code to be executed as long as the condition is true
 
 # Ask the user for input
-$userInput = Read-Host "Please enter an SIU Active Directory username or email:"
+$userInput = Read-Host "Please enter an Active Directory username or email:"
 
 Set-ExecutionPolicy RemoteSigned
 
@@ -28,4 +28,5 @@ else {
 
  # Prompt to continue
     $continue = Read-Host "Do you want to enter another username or email (y/n)?"
+
 } while ($continue -eq 'y')
